@@ -1,0 +1,10 @@
+<div id="map_canvas" style="width: 100%; height: 100%;"></div>
+
+<script>
+  display_map(40.721632, -73.985538, 14);
+
+  <% @sub.each do |x| %>
+    add_marker(<%= x.lat %>, <%= x.long %>, '<%= x.name %>');
+  <% end %>
+
+</script>
